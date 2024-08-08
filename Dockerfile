@@ -23,7 +23,7 @@ COPY src /app/src
 # The --no-root option is used to avoid installing the package (defined in pyproject.toml) itself
 # The --no-interaction option is used to avoid interactive prompts
 RUN poetry install --no-root --no-interaction
-COPY --from=builder /app /app
+
 # Expose port 7001 for the application
 EXPOSE 7001
 
