@@ -15,7 +15,7 @@ RUN pip install poetry==1.1.13  # Replace with the desired version
 
 # Copy the current directory contents into the container at /app
 COPY pyproject.toml poetry.lock* /app/
-COPY src /app/src
+
 # Continue copying other necessary files and directories individually
 
 # Install dependencies using poetry
