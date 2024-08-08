@@ -17,6 +17,7 @@ RUN pip install --upgrade pip && \
 
 # Copy the current directory contents into the container at /app
 COPY pyproject.toml poetry.lock* /app/
+COPY src /app/src
 
 # Install dependencies using poetry
 # The --no-root option is used to avoid installing the package (defined in pyproject.toml) itself
